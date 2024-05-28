@@ -114,7 +114,7 @@ function zerar() {
 }
 
 function mostrarTempo() {
-    const tempo = new Date(tempoDecorridoEmSegundos * 10000)
+    const tempo = new Date(tempoDecorridoEmSegundos * 5000)
     const tempoFormatado = tempo.toLocaleTimeString('pt-Br', {minute: '2-digit', second: '2-digit'})
     tempoNaTela.innerHTML = `${tempoFormatado}`
 }
